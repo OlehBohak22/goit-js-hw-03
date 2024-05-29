@@ -1,5 +1,6 @@
-// const slugify = (title) => title.split(" ").join("-").toLowerCase();
-const slugify = (title) => title.replace(/ /g, "-").toLowerCase();
+// const slugify = (title) => title.replace(/ /g, "-").toLowerCase();
+
+const slugify = (title) => title.split(" ").join("-").toLowerCase();
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
